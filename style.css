@@ -1,0 +1,70 @@
+body {
+  font-size: 30px;
+  background-color: aquamarine;
+  color: black;
+  text-align: center;
+  padding-top: 150px;
+  font-family: sans-serif;
+}
+.btn {
+  padding: 20px 50px;
+  margin: 10px;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: gray;
+  color: black;
+  transition: 0.3s;
+}
+#onBtn.active {
+  background-color: red;
+  color: white;
+}
+#offBtn.active {
+  background-color: gold;
+  color: white;
+}
+#onBtn:not(:active):hover,
+#offBtn:not(:active):hover {
+  background-color: red;
+  color: white;
+}
+.stop {
+  background-color: red;
+  color: white;
+}
+.stop:hover {
+  background-color: darkred;
+  color: white;
+}
+
+@keyframes rainbowText {
+  0% {
+    color: red;
+  }
+  14% {
+    color: orange;
+  }
+  28% {
+    color: yellow;
+  }
+  42% {
+    color: green;
+  }
+  57% {
+    color: blue;
+  }
+  71% {
+    color: indigo;
+  }
+  85% {
+    color: violet;
+  }
+  100% {
+    color: red;
+  }
+}
+
+h1 {
+  animation: rainbowText 3s linear infinite;
+}
