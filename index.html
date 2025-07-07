@@ -4,13 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Thực Tập</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Text Thử Thôi</h1>
-    <button id="onBtn" class="btn">ON</button>
-    <button id="offBtn" class="btn">OFF</button>
-    <button id="stopBtn" class="btn stop">STOP</button>
+    <div class="tren">
+      <h3>Tự Động 5s</h3>
+      <button id="onBtn" class="btn">Bật</button>
+      <button id="offBtn" class="btn">Tắt</button>
+      <button id="stopBtn" class="btn stop">Dừng lại</button>
+      <div class="status" id="statusAuto">Trạng thái: Đang chờ...</div>
+      <div id="timerDisplay">Chuẩn Bị</div>
+    </div>
+    <hr />
+    <div class="duoi">
+      <h3>Thủ Công Nhấn Tay</h3>
+      <button class="button on" onclick="sendCommand('on')">
+        Bật máy lạnh
+      </button>
+      <button class="button off" onclick="sendCommand('off')">
+        Tắt máy lạnh
+      </button>
+      <div class="status" id="status">Trạng thái: Đang chờ</div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
